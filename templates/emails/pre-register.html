@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suscripción a Netflix</title>
+    <style>
+        /* Estilos para el cuerpo del correo */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+            background-color: #f2f2f2;
+        }
+
+        /* Estilos para el contenedor principal */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        /* Estilos para el encabezado */
+        .header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        /* Estilos para el contenido */
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para el botón */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e50914;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Bienvenido {{ name }}!</h1>
+    <p>Estos son los datos de tu mascota en el pre-registro:</p>
+    <ul>
+        <li>Nombre:{{ pet_name }}</li>
+        <li>Especie:{{ pet_specie }}</li>
+    </ul>
+</div>
+</body>
+</html>

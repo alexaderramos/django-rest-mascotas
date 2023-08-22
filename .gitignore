@@ -1,0 +1,6 @@
+/.idea
+__pycache__
+secret.json
+venv
+venv/*
+staticfiles/*
